@@ -1,0 +1,15 @@
+<div class="container-fluid vh-100 d-flex align-items-center justify-content-center container-style">
+  <div class="row align-items-center row-style">
+    <div class="col d-flex flex-column">
+      <h1>Login</h1>
+      <p>Sign into your account</p>
+      <form [formGroup]="authForm" (ngSubmit)="login()">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control input-style" formControlName="email" placeholder="Write your email here"/>
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control input-style" formControlName="password" placeholder="Write your password here"/>
+        <button type="submit" class="btn btn-primary btn-lg">Login</button>
+      </form>
+    </div>
+  </div>
+</div>
